@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A2FB789C35CDCA2358B3AC8 /* ManualReader.h in Headers */ = {isa = PBXBuildFile; fileRef = FB29E42FB932AC498BA03A80 /* ManualReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465D23E3200E840400FE23BB /* AUTAPIFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23D9200E840400FE23BB /* AUTAPIFixture.m */; };
+		465D23E4200E840400FE23BB /* AUTAPIFixtureEndpointInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23DA200E840400FE23BB /* AUTAPIFixtureEndpointInfo.m */; };
+		465D23E5200E840400FE23BB /* AUTAPIFixture.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D23DB200E840400FE23BB /* AUTAPIFixture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465D23E6200E840400FE23BB /* AUTAPIFixtureRequestParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D23DC200E840400FE23BB /* AUTAPIFixtureRequestParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465D23E7200E840400FE23BB /* AUTAPIFixtureResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D23DD200E840400FE23BB /* AUTAPIFixtureResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465D23E8200E840400FE23BB /* AUTAPIFixtureEndpointInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D23DE200E840400FE23BB /* AUTAPIFixtureEndpointInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465D23E9200E840400FE23BB /* AUTAPIFixtureRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D23DF200E840400FE23BB /* AUTAPIFixtureRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465D23EA200E840400FE23BB /* AUTAPIFixtureRequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23E0200E840400FE23BB /* AUTAPIFixtureRequestParameters.m */; };
+		465D23EB200E840400FE23BB /* AUTAPIFixtureResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23E1200E840400FE23BB /* AUTAPIFixtureResponse.m */; };
+		465D23EC200E840400FE23BB /* AUTAPIFixtureRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23E2200E840400FE23BB /* AUTAPIFixtureRequest.m */; };
+		465D23EF200E84FD00FE23BB /* Mantle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465D23EE200E84FD00FE23BB /* Mantle.framework */; };
+		465D23F4200E851300FE23BB /* AUTTestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465D23F1200E851300FE23BB /* AUTTestKit.framework */; };
+		465D2403200E85FF00FE23BB /* AUTAPIServiceFixtures+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23FB200E85FF00FE23BB /* AUTAPIServiceFixtures+Parse.m */; };
+		465D2404200E85FF00FE23BB /* AUTAPIServiceFixtures.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D23FC200E85FF00FE23BB /* AUTAPIServiceFixtures.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465D2405200E85FF00FE23BB /* AUTAPIServiceFixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23FD200E85FF00FE23BB /* AUTAPIServiceFixtures.m */; };
+		465D2406200E85FF00FE23BB /* AUTAPIServiceFixtures+Parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D23FE200E85FF00FE23BB /* AUTAPIServiceFixtures+Parse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465D2407200E85FF00FE23BB /* AUTAPIServiceFixtures+Stub.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D23FF200E85FF00FE23BB /* AUTAPIServiceFixtures+Stub.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465D2408200E85FF00FE23BB /* AUTAPIServiceFixtures+Stub.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2400200E85FF00FE23BB /* AUTAPIServiceFixtures+Stub.m */; };
+		465D240B200E873600FE23BB /* AUTAPIServiceFixtures+RequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2409200E873600FE23BB /* AUTAPIServiceFixtures+RequestParameters.m */; };
+		465D240C200E873600FE23BB /* AUTAPIServiceFixtures+RequestParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D240A200E873600FE23BB /* AUTAPIServiceFixtures+RequestParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		465D240D200E876F00FE23BB /* Nocilla.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465D23F2200E851300FE23BB /* Nocilla.framework */; };
+		465D241B200E88BF00FE23BB /* AUTAssertNotNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D2413200E88BF00FE23BB /* AUTAssertNotNil.h */; };
+		465D241C200E88BF00FE23BB /* AUTAutoType.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D2414200E88BF00FE23BB /* AUTAutoType.h */; };
+		465D241D200E88BF00FE23BB /* AUTLocalizationNotNeeded.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D2415200E88BF00FE23BB /* AUTLocalizationNotNeeded.h */; };
+		465D241E200E88BF00FE23BB /* AUTNotNil.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D2416200E88BF00FE23BB /* AUTNotNil.h */; };
+		465D241F200E88BF00FE23BB /* metamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D2417200E88BF00FE23BB /* metamacros.h */; };
+		465D2420200E88BF00FE23BB /* AUTExtObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D2418200E88BF00FE23BB /* AUTExtObjC.h */; };
+		465D2421200E88BF00FE23BB /* AUTStrongifyOr.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D2419200E88BF00FE23BB /* AUTStrongifyOr.h */; };
+		465D2422200E88BF00FE23BB /* AUTUnavailableDesignatedInitializer.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D241A200E88BF00FE23BB /* AUTUnavailableDesignatedInitializer.h */; };
+		465D2428200E896200FE23BB /* AUTDictionaryTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D2424200E896200FE23BB /* AUTDictionaryTransformer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		465D2429200E896200FE23BB /* AUTDictionaryTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2425200E896200FE23BB /* AUTDictionaryTransformer.m */; };
+		465D242A200E896200FE23BB /* AUTJSONStringTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D2426200E896200FE23BB /* AUTJSONStringTransformer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		465D242B200E896200FE23BB /* AUTJSONStringTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2427200E896200FE23BB /* AUTJSONStringTransformer.m */; };
+		465D242E200E899F00FE23BB /* AUTValidatingValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D242C200E899F00FE23BB /* AUTValidatingValueTransformer.m */; };
+		465D242F200E899F00FE23BB /* AUTValidatingValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D242D200E899F00FE23BB /* AUTValidatingValueTransformer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		465D2432200E89C100FE23BB /* AUTURLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2430200E89C000FE23BB /* AUTURLValueTransformer.m */; };
+		465D2433200E89C100FE23BB /* AUTURLValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D2431200E89C100FE23BB /* AUTURLValueTransformer.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		465D2437200E8DA700FE23BB /* MTLModel+AUTValidateNonnull.h in Headers */ = {isa = PBXBuildFile; fileRef = 465D2435200E8DA600FE23BB /* MTLModel+AUTValidateNonnull.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		465D2438200E8DA700FE23BB /* MTLModel+AUTValidateNonnull.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2436200E8DA600FE23BB /* MTLModel+AUTValidateNonnull.m */; };
+		465D2439200E8F7C00FE23BB /* Specta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465D23F0200E851300FE23BB /* Specta.framework */; };
+		465D243B200E917200FE23BB /* Expecta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 465D243A200E917200FE23BB /* Expecta.framework */; };
+		465D2441200E946100FE23BB /* AUTJSONStringTransformerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2440200E946000FE23BB /* AUTJSONStringTransformerSpec.m */; };
+		465D2443200E9CD500FE23BB /* AUTValidatingValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D242C200E899F00FE23BB /* AUTValidatingValueTransformer.m */; };
+		465D2444200E9CD700FE23BB /* AUTURLValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2430200E89C000FE23BB /* AUTURLValueTransformer.m */; };
+		465D2445200E9CDB00FE23BB /* AUTJSONStringTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2427200E896200FE23BB /* AUTJSONStringTransformer.m */; };
+		465D2446200E9CE200FE23BB /* AUTDictionaryTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2425200E896200FE23BB /* AUTDictionaryTransformer.m */; };
+		465D2449200E9D1B00FE23BB /* AUTTestKit.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 465D23F1200E851300FE23BB /* AUTTestKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		465D244A200E9D2E00FE23BB /* ManualReader.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 151D6B19609430A7CBD9E7C3 /* ManualReader.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		465D244B200E9D3900FE23BB /* Expecta.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 465D243A200E917200FE23BB /* Expecta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		465D244C200E9D3E00FE23BB /* Specta.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 465D23F0200E851300FE23BB /* Specta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		465D244D200E9D4200FE23BB /* Nocilla.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 465D23F2200E851300FE23BB /* Nocilla.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		465D244E200E9D4C00FE23BB /* Mantle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 465D23EE200E84FD00FE23BB /* Mantle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		465D2452200E9F4E00FE23BB /* AUTAPIServiceFixtures+ParseSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2451200E9F4E00FE23BB /* AUTAPIServiceFixtures+ParseSpec.m */; };
+		465D2453200E9FD800FE23BB /* AUTAPIServiceFixtures.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23FD200E85FF00FE23BB /* AUTAPIServiceFixtures.m */; };
+		465D2454200E9FDB00FE23BB /* AUTAPIServiceFixtures+Parse.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23FB200E85FF00FE23BB /* AUTAPIServiceFixtures+Parse.m */; };
+		465D2455200E9FDC00FE23BB /* AUTAPIServiceFixtures+RequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2409200E873600FE23BB /* AUTAPIServiceFixtures+RequestParameters.m */; };
+		465D2456200E9FDE00FE23BB /* AUTAPIServiceFixtures+Stub.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2400200E85FF00FE23BB /* AUTAPIServiceFixtures+Stub.m */; };
+		465D2457200E9FE200FE23BB /* AUTAPIFixtureResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23E1200E840400FE23BB /* AUTAPIFixtureResponse.m */; };
+		465D2458200E9FE400FE23BB /* AUTAPIFixtureRequestParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23E0200E840400FE23BB /* AUTAPIFixtureRequestParameters.m */; };
+		465D2459200E9FE600FE23BB /* AUTAPIFixtureRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23E2200E840400FE23BB /* AUTAPIFixtureRequest.m */; };
+		465D245A200E9FE800FE23BB /* AUTAPIFixtureEndpointInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23DA200E840400FE23BB /* AUTAPIFixtureEndpointInfo.m */; };
+		465D245B200E9FEA00FE23BB /* AUTAPIFixture.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D23D9200E840400FE23BB /* AUTAPIFixture.m */; };
+		465D245C200EA0CA00FE23BB /* MTLModel+AUTValidateNonnull.m in Sources */ = {isa = PBXBuildFile; fileRef = 465D2436200E8DA600FE23BB /* MTLModel+AUTValidateNonnull.m */; };
+		46A060FA209BCBFA00E6AB03 /* fixtures in Resources */ = {isa = PBXBuildFile; fileRef = 46A060F9209BCBF900E6AB03 /* fixtures */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AAE5E4E5DD20957730EC5EA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6060495F265BF17A4B4F9EF8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 470AA43EEF85F9896A3C2210;
+			remoteInfo = ManualReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		465D2448200E9D0D00FE23BB /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				465D244E200E9D4C00FE23BB /* Mantle.framework in Copy Frameworks */,
+				465D244D200E9D4200FE23BB /* Nocilla.framework in Copy Frameworks */,
+				465D244C200E9D3E00FE23BB /* Specta.framework in Copy Frameworks */,
+				465D244B200E9D3900FE23BB /* Expecta.framework in Copy Frameworks */,
+				465D244A200E9D2E00FE23BB /* ManualReader.framework in Copy Frameworks */,
+				465D2449200E9D1B00FE23BB /* AUTTestKit.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		151D6B19609430A7CBD9E7C3 /* ManualReader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ManualReader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		25123F18E984165F034A9102 /* StaticLibrary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = StaticLibrary.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Targets/StaticLibrary.xcconfig; sourceTree = "<group>"; };
+		2AEB7708830C54F02049CED8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		465D23D9200E840400FE23BB /* AUTAPIFixture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTAPIFixture.m; sourceTree = "<group>"; };
+		465D23DA200E840400FE23BB /* AUTAPIFixtureEndpointInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTAPIFixtureEndpointInfo.m; sourceTree = "<group>"; };
+		465D23DB200E840400FE23BB /* AUTAPIFixture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTAPIFixture.h; sourceTree = "<group>"; };
+		465D23DC200E840400FE23BB /* AUTAPIFixtureRequestParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTAPIFixtureRequestParameters.h; sourceTree = "<group>"; };
+		465D23DD200E840400FE23BB /* AUTAPIFixtureResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTAPIFixtureResponse.h; sourceTree = "<group>"; };
+		465D23DE200E840400FE23BB /* AUTAPIFixtureEndpointInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTAPIFixtureEndpointInfo.h; sourceTree = "<group>"; };
+		465D23DF200E840400FE23BB /* AUTAPIFixtureRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTAPIFixtureRequest.h; sourceTree = "<group>"; };
+		465D23E0200E840400FE23BB /* AUTAPIFixtureRequestParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTAPIFixtureRequestParameters.m; sourceTree = "<group>"; };
+		465D23E1200E840400FE23BB /* AUTAPIFixtureResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTAPIFixtureResponse.m; sourceTree = "<group>"; };
+		465D23E2200E840400FE23BB /* AUTAPIFixtureRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTAPIFixtureRequest.m; sourceTree = "<group>"; };
+		465D23EE200E84FD00FE23BB /* Mantle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mantle.framework; path = Carthage/Build/iOS/Mantle.framework; sourceTree = "<group>"; };
+		465D23F0200E851300FE23BB /* Specta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Specta.framework; path = Carthage/Build/iOS/Specta.framework; sourceTree = "<group>"; };
+		465D23F1200E851300FE23BB /* AUTTestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AUTTestKit.framework; path = Carthage/Build/iOS/AUTTestKit.framework; sourceTree = "<group>"; };
+		465D23F2200E851300FE23BB /* Nocilla.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nocilla.framework; path = Carthage/Build/iOS/Nocilla.framework; sourceTree = "<group>"; };
+		465D23FB200E85FF00FE23BB /* AUTAPIServiceFixtures+Parse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AUTAPIServiceFixtures+Parse.m"; sourceTree = "<group>"; };
+		465D23FC200E85FF00FE23BB /* AUTAPIServiceFixtures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTAPIServiceFixtures.h; sourceTree = "<group>"; };
+		465D23FD200E85FF00FE23BB /* AUTAPIServiceFixtures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTAPIServiceFixtures.m; sourceTree = "<group>"; };
+		465D23FE200E85FF00FE23BB /* AUTAPIServiceFixtures+Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AUTAPIServiceFixtures+Parse.h"; sourceTree = "<group>"; };
+		465D23FF200E85FF00FE23BB /* AUTAPIServiceFixtures+Stub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AUTAPIServiceFixtures+Stub.h"; sourceTree = "<group>"; };
+		465D2400200E85FF00FE23BB /* AUTAPIServiceFixtures+Stub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AUTAPIServiceFixtures+Stub.m"; sourceTree = "<group>"; };
+		465D2409200E873600FE23BB /* AUTAPIServiceFixtures+RequestParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AUTAPIServiceFixtures+RequestParameters.m"; sourceTree = "<group>"; };
+		465D240A200E873600FE23BB /* AUTAPIServiceFixtures+RequestParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AUTAPIServiceFixtures+RequestParameters.h"; sourceTree = "<group>"; };
+		465D2413200E88BF00FE23BB /* AUTAssertNotNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTAssertNotNil.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTAssertNotNil.h; sourceTree = SOURCE_ROOT; };
+		465D2414200E88BF00FE23BB /* AUTAutoType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTAutoType.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTAutoType.h; sourceTree = SOURCE_ROOT; };
+		465D2415200E88BF00FE23BB /* AUTLocalizationNotNeeded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTLocalizationNotNeeded.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTLocalizationNotNeeded.h; sourceTree = SOURCE_ROOT; };
+		465D2416200E88BF00FE23BB /* AUTNotNil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTNotNil.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTNotNil.h; sourceTree = SOURCE_ROOT; };
+		465D2417200E88BF00FE23BB /* metamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = metamacros.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/metamacros.h; sourceTree = SOURCE_ROOT; };
+		465D2418200E88BF00FE23BB /* AUTExtObjC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTExtObjC.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTExtObjC.h; sourceTree = SOURCE_ROOT; };
+		465D2419200E88BF00FE23BB /* AUTStrongifyOr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTStrongifyOr.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTStrongifyOr.h; sourceTree = SOURCE_ROOT; };
+		465D241A200E88BF00FE23BB /* AUTUnavailableDesignatedInitializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AUTUnavailableDesignatedInitializer.h; path = Carthage/Checkouts/AUTExtObjC/AUTExtObjC/AUTUnavailableDesignatedInitializer.h; sourceTree = SOURCE_ROOT; };
+		465D2424200E896200FE23BB /* AUTDictionaryTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTDictionaryTransformer.h; sourceTree = "<group>"; };
+		465D2425200E896200FE23BB /* AUTDictionaryTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTDictionaryTransformer.m; sourceTree = "<group>"; };
+		465D2426200E896200FE23BB /* AUTJSONStringTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTJSONStringTransformer.h; sourceTree = "<group>"; };
+		465D2427200E896200FE23BB /* AUTJSONStringTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTJSONStringTransformer.m; sourceTree = "<group>"; };
+		465D242C200E899F00FE23BB /* AUTValidatingValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTValidatingValueTransformer.m; sourceTree = "<group>"; };
+		465D242D200E899F00FE23BB /* AUTValidatingValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTValidatingValueTransformer.h; sourceTree = "<group>"; };
+		465D2430200E89C000FE23BB /* AUTURLValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTURLValueTransformer.m; sourceTree = "<group>"; };
+		465D2431200E89C100FE23BB /* AUTURLValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AUTURLValueTransformer.h; sourceTree = "<group>"; };
+		465D2435200E8DA600FE23BB /* MTLModel+AUTValidateNonnull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MTLModel+AUTValidateNonnull.h"; sourceTree = "<group>"; };
+		465D2436200E8DA600FE23BB /* MTLModel+AUTValidateNonnull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MTLModel+AUTValidateNonnull.m"; sourceTree = "<group>"; };
+		465D243A200E917200FE23BB /* Expecta.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Expecta.framework; path = Carthage/Build/iOS/Expecta.framework; sourceTree = "<group>"; };
+		465D2440200E946000FE23BB /* AUTJSONStringTransformerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AUTJSONStringTransformerSpec.m; sourceTree = "<group>"; };
+		465D2451200E9F4E00FE23BB /* AUTAPIServiceFixtures+ParseSpec.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AUTAPIServiceFixtures+ParseSpec.m"; sourceTree = "<group>"; };
+		465D245D200EAA7500FE23BB /* ManualReaderTestsStatic.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ManualReaderTestsStatic.xcconfig; sourceTree = "<group>"; };
+		465D245E200EAA8900FE23BB /* ManualReaderStatic.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ManualReaderStatic.xcconfig; sourceTree = "<group>"; };
+		46A060F9209BCBF900E6AB03 /* fixtures */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fixtures; path = Carthage/Checkouts/Manual/Example/gen_files/fixtures; sourceTree = SOURCE_ROOT; };
+		54E5137E45BB01B1F23C11B6 /* Release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Configurations/Release.xcconfig; sourceTree = "<group>"; };
+		5B4C16693E3B9CF79F1EE915 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		624FB791FB6936438C5E5918 /* ManualReader.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ManualReader.xcconfig; sourceTree = "<group>"; };
+		67F5AB9476F5CDACD7A4357E /* ManualReaderTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ManualReaderTests.xcconfig; sourceTree = "<group>"; };
+		6D38C5FCA253788CEF5F1D7A /* Framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Framework.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Targets/Framework.xcconfig; sourceTree = "<group>"; };
+		7F1FDECCE7A456AAFF973352 /* Application.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Application.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Targets/Application.xcconfig; sourceTree = "<group>"; };
+		821B82429E9F0AE4CAB90B0F /* iOS-Framework.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "iOS-Framework.xcconfig"; path = "Carthage/Checkouts/xcconfigs/iOS/iOS-Framework.xcconfig"; sourceTree = "<group>"; };
+		A13B35A18394A2E633DE6C57 /* ManualReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManualReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE2FD05B2645DCFDBEE8580A /* Profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Profile.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Configurations/Profile.xcconfig; sourceTree = "<group>"; };
+		D3BC651F62ED017A9CDF94B3 /* iOS-Application.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "iOS-Application.xcconfig"; path = "Carthage/Checkouts/xcconfigs/iOS/iOS-Application.xcconfig"; sourceTree = "<group>"; };
+		E262B2D6DC8845E62A3DAB45 /* Common.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Common.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Common.xcconfig; sourceTree = "<group>"; };
+		E6CF113C119AA310AF684850 /* iOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "iOS-StaticLibrary.xcconfig"; path = "Carthage/Checkouts/xcconfigs/iOS/iOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		F30841512151C9C69B6B16BD /* Test.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Test.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Configurations/Test.xcconfig; sourceTree = "<group>"; };
+		F5A08A16EA382B02497ADEAB /* iOS-Base.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "iOS-Base.xcconfig"; path = "Carthage/Checkouts/xcconfigs/iOS/iOS-Base.xcconfig"; sourceTree = "<group>"; };
+		F835B6773A46ACBB2B55047B /* Debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = Carthage/Checkouts/xcconfigs/Base/Configurations/Debug.xcconfig; sourceTree = "<group>"; };
+		FB29E42FB932AC498BA03A80 /* ManualReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ManualReader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		829603B1599715359A5579F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465D2439200E8F7C00FE23BB /* Specta.framework in Frameworks */,
+				465D243B200E917200FE23BB /* Expecta.framework in Frameworks */,
+				465D240D200E876F00FE23BB /* Nocilla.framework in Frameworks */,
+				465D23EF200E84FD00FE23BB /* Mantle.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAD7BADF6D964773C8782C7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465D23F4200E851300FE23BB /* AUTTestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		002321F07B10B80FD6DF17DD /* ManualReader */ = {
+			isa = PBXGroup;
+			children = (
+				465D23D8200E83EE00FE23BB /* Fixtures */,
+				465D2423200E894C00FE23BB /* Transformers */,
+				465D2434200E8D9300FE23BB /* Validation */,
+				DE5B687B0E8DACAC994513A7 /* Supporting Files */,
+				FB29E42FB932AC498BA03A80 /* ManualReader.h */,
+			);
+			path = ManualReader;
+			sourceTree = "<group>";
+		};
+		0F52B835506B8BF5C3DCDAA1 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				F835B6773A46ACBB2B55047B /* Debug.xcconfig */,
+				AE2FD05B2645DCFDBEE8580A /* Profile.xcconfig */,
+				54E5137E45BB01B1F23C11B6 /* Release.xcconfig */,
+				F30841512151C9C69B6B16BD /* Test.xcconfig */,
+			);
+			name = Configurations;
+			sourceTree = "<group>";
+		};
+		2AE96325045933BC558EF8CD /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				7F1FDECCE7A456AAFF973352 /* Application.xcconfig */,
+				6D38C5FCA253788CEF5F1D7A /* Framework.xcconfig */,
+				25123F18E984165F034A9102 /* StaticLibrary.xcconfig */,
+			);
+			name = Targets;
+			sourceTree = "<group>";
+		};
+		3D5C91EC2BB9A1579EE9E478 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0F52B835506B8BF5C3DCDAA1 /* Configurations */,
+				2AE96325045933BC558EF8CD /* Targets */,
+				E262B2D6DC8845E62A3DAB45 /* Common.xcconfig */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		465D23D8200E83EE00FE23BB /* Fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				465D23DB200E840400FE23BB /* AUTAPIFixture.h */,
+				465D23D9200E840400FE23BB /* AUTAPIFixture.m */,
+				465D23DE200E840400FE23BB /* AUTAPIFixtureEndpointInfo.h */,
+				465D23DA200E840400FE23BB /* AUTAPIFixtureEndpointInfo.m */,
+				465D23DF200E840400FE23BB /* AUTAPIFixtureRequest.h */,
+				465D23E2200E840400FE23BB /* AUTAPIFixtureRequest.m */,
+				465D23DC200E840400FE23BB /* AUTAPIFixtureRequestParameters.h */,
+				465D23E0200E840400FE23BB /* AUTAPIFixtureRequestParameters.m */,
+				465D23DD200E840400FE23BB /* AUTAPIFixtureResponse.h */,
+				465D23E1200E840400FE23BB /* AUTAPIFixtureResponse.m */,
+				465D23FC200E85FF00FE23BB /* AUTAPIServiceFixtures.h */,
+				465D23FD200E85FF00FE23BB /* AUTAPIServiceFixtures.m */,
+				465D23FE200E85FF00FE23BB /* AUTAPIServiceFixtures+Parse.h */,
+				465D23FB200E85FF00FE23BB /* AUTAPIServiceFixtures+Parse.m */,
+				465D240A200E873600FE23BB /* AUTAPIServiceFixtures+RequestParameters.h */,
+				465D2409200E873600FE23BB /* AUTAPIServiceFixtures+RequestParameters.m */,
+				465D23FF200E85FF00FE23BB /* AUTAPIServiceFixtures+Stub.h */,
+				465D2400200E85FF00FE23BB /* AUTAPIServiceFixtures+Stub.m */,
+			);
+			name = Fixtures;
+			sourceTree = "<group>";
+		};
+		465D23ED200E84DF00FE23BB /* Carthage */ = {
+			isa = PBXGroup;
+			children = (
+				465D23F1200E851300FE23BB /* AUTTestKit.framework */,
+				465D243A200E917200FE23BB /* Expecta.framework */,
+				465D23EE200E84FD00FE23BB /* Mantle.framework */,
+				465D23F2200E851300FE23BB /* Nocilla.framework */,
+				465D23F0200E851300FE23BB /* Specta.framework */,
+			);
+			name = Carthage;
+			sourceTree = "<group>";
+		};
+		465D240F200E885D00FE23BB /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				465D2410200E886500FE23BB /* AUTExtObjC */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		465D2410200E886500FE23BB /* AUTExtObjC */ = {
+			isa = PBXGroup;
+			children = (
+				465D2413200E88BF00FE23BB /* AUTAssertNotNil.h */,
+				465D2414200E88BF00FE23BB /* AUTAutoType.h */,
+				465D2418200E88BF00FE23BB /* AUTExtObjC.h */,
+				465D2415200E88BF00FE23BB /* AUTLocalizationNotNeeded.h */,
+				465D2416200E88BF00FE23BB /* AUTNotNil.h */,
+				465D2419200E88BF00FE23BB /* AUTStrongifyOr.h */,
+				465D241A200E88BF00FE23BB /* AUTUnavailableDesignatedInitializer.h */,
+				465D2417200E88BF00FE23BB /* metamacros.h */,
+			);
+			path = AUTExtObjC;
+			sourceTree = "<group>";
+		};
+		465D2423200E894C00FE23BB /* Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				465D2424200E896200FE23BB /* AUTDictionaryTransformer.h */,
+				465D2425200E896200FE23BB /* AUTDictionaryTransformer.m */,
+				465D2426200E896200FE23BB /* AUTJSONStringTransformer.h */,
+				465D2427200E896200FE23BB /* AUTJSONStringTransformer.m */,
+				465D2431200E89C100FE23BB /* AUTURLValueTransformer.h */,
+				465D2430200E89C000FE23BB /* AUTURLValueTransformer.m */,
+				465D242D200E899F00FE23BB /* AUTValidatingValueTransformer.h */,
+				465D242C200E899F00FE23BB /* AUTValidatingValueTransformer.m */,
+			);
+			name = Transformers;
+			sourceTree = "<group>";
+		};
+		465D2434200E8D9300FE23BB /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				465D2435200E8DA600FE23BB /* MTLModel+AUTValidateNonnull.h */,
+				465D2436200E8DA600FE23BB /* MTLModel+AUTValidateNonnull.m */,
+			);
+			name = Validation;
+			sourceTree = "<group>";
+		};
+		8C5BD0EAF100CAF5B4905146 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D3BC651F62ED017A9CDF94B3 /* iOS-Application.xcconfig */,
+				F5A08A16EA382B02497ADEAB /* iOS-Base.xcconfig */,
+				821B82429E9F0AE4CAB90B0F /* iOS-Framework.xcconfig */,
+				E6CF113C119AA310AF684850 /* iOS-StaticLibrary.xcconfig */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		9F0887F7BBB8F4991F3811D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				465D23ED200E84DF00FE23BB /* Carthage */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F46F78B5294080F6F2B8CE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				151D6B19609430A7CBD9E7C3 /* ManualReader.framework */,
+				A13B35A18394A2E633DE6C57 /* ManualReaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B05512ED04CC024AC4A183F4 = {
+			isa = PBXGroup;
+			children = (
+				002321F07B10B80FD6DF17DD /* ManualReader */,
+				B43C36EFF276485A7FC4ECB4 /* ManualReaderTests */,
+				D90A5153C3861B4802494B94 /* Configuration */,
+				9F0887F7BBB8F4991F3811D6 /* Frameworks */,
+				465D240F200E885D00FE23BB /* Vendor */,
+				9F46F78B5294080F6F2B8CE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B43C36EFF276485A7FC4ECB4 /* ManualReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				465D2440200E946000FE23BB /* AUTJSONStringTransformerSpec.m */,
+				465D2451200E9F4E00FE23BB /* AUTAPIServiceFixtures+ParseSpec.m */,
+				46A060F9209BCBF900E6AB03 /* fixtures */,
+				CF20FD2783B1E610E5610EFD /* Supporting Files */,
+			);
+			path = ManualReaderTests;
+			sourceTree = "<group>";
+		};
+		CF20FD2783B1E610E5610EFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				67F5AB9476F5CDACD7A4357E /* ManualReaderTests.xcconfig */,
+				465D245D200EAA7500FE23BB /* ManualReaderTestsStatic.xcconfig */,
+				2AEB7708830C54F02049CED8 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D90A5153C3861B4802494B94 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				3D5C91EC2BB9A1579EE9E478 /* Base */,
+				8C5BD0EAF100CAF5B4905146 /* iOS */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		DE5B687B0E8DACAC994513A7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				624FB791FB6936438C5E5918 /* ManualReader.xcconfig */,
+				465D245E200EAA8900FE23BB /* ManualReaderStatic.xcconfig */,
+				5B4C16693E3B9CF79F1EE915 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		85F0251C63A1CA7A0272AEC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465D23E6200E840400FE23BB /* AUTAPIFixtureRequestParameters.h in Headers */,
+				465D23E5200E840400FE23BB /* AUTAPIFixture.h in Headers */,
+				465D23E8200E840400FE23BB /* AUTAPIFixtureEndpointInfo.h in Headers */,
+				1A2FB789C35CDCA2358B3AC8 /* ManualReader.h in Headers */,
+				465D2404200E85FF00FE23BB /* AUTAPIServiceFixtures.h in Headers */,
+				465D23E9200E840400FE23BB /* AUTAPIFixtureRequest.h in Headers */,
+				465D23E7200E840400FE23BB /* AUTAPIFixtureResponse.h in Headers */,
+				465D2433200E89C100FE23BB /* AUTURLValueTransformer.h in Headers */,
+				465D2428200E896200FE23BB /* AUTDictionaryTransformer.h in Headers */,
+				465D2421200E88BF00FE23BB /* AUTStrongifyOr.h in Headers */,
+				465D240C200E873600FE23BB /* AUTAPIServiceFixtures+RequestParameters.h in Headers */,
+				465D241C200E88BF00FE23BB /* AUTAutoType.h in Headers */,
+				465D2407200E85FF00FE23BB /* AUTAPIServiceFixtures+Stub.h in Headers */,
+				465D2406200E85FF00FE23BB /* AUTAPIServiceFixtures+Parse.h in Headers */,
+				465D241B200E88BF00FE23BB /* AUTAssertNotNil.h in Headers */,
+				465D241E200E88BF00FE23BB /* AUTNotNil.h in Headers */,
+				465D2437200E8DA700FE23BB /* MTLModel+AUTValidateNonnull.h in Headers */,
+				465D2420200E88BF00FE23BB /* AUTExtObjC.h in Headers */,
+				465D241F200E88BF00FE23BB /* metamacros.h in Headers */,
+				465D242A200E896200FE23BB /* AUTJSONStringTransformer.h in Headers */,
+				465D241D200E88BF00FE23BB /* AUTLocalizationNotNeeded.h in Headers */,
+				465D242F200E899F00FE23BB /* AUTValidatingValueTransformer.h in Headers */,
+				465D2422200E88BF00FE23BB /* AUTUnavailableDesignatedInitializer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		470AA43EEF85F9896A3C2210 /* ManualReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4EDB67E0CFE6E6985BDD7D0 /* Build configuration list for PBXNativeTarget "ManualReader" */;
+			buildPhases = (
+				AC1513BE48B4E325AA9D63D6 /* Sources */,
+				829603B1599715359A5579F7 /* Frameworks */,
+				85F0251C63A1CA7A0272AEC7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ManualReader;
+			productName = ManualReader;
+			productReference = 151D6B19609430A7CBD9E7C3 /* ManualReader.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AED8EA82AF6518FAEC2A8330 /* ManualReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF471B14BE93C499D7519353 /* Build configuration list for PBXNativeTarget "ManualReaderTests" */;
+			buildPhases = (
+				D8A17B116C3DAE981F1C8509 /* Sources */,
+				CAD7BADF6D964773C8782C7A /* Frameworks */,
+				EC3F74647ADD27A15644CBAE /* Resources */,
+				465D2448200E9D0D00FE23BB /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C6A15D76CB5D1A90EF1B6B2D /* PBXTargetDependency */,
+			);
+			name = ManualReaderTests;
+			productName = ManualReaderTests;
+			productReference = A13B35A18394A2E633DE6C57 /* ManualReaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6060495F265BF17A4B4F9EF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Automatic Labs";
+			};
+			buildConfigurationList = FEB760C71FA9BC11C1806173 /* Build configuration list for PBXProject "ManualReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B05512ED04CC024AC4A183F4;
+			productRefGroup = 9F46F78B5294080F6F2B8CE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				470AA43EEF85F9896A3C2210 /* ManualReader */,
+				AED8EA82AF6518FAEC2A8330 /* ManualReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC3F74647ADD27A15644CBAE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46A060FA209BCBFA00E6AB03 /* fixtures in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC1513BE48B4E325AA9D63D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465D2432200E89C100FE23BB /* AUTURLValueTransformer.m in Sources */,
+				465D2405200E85FF00FE23BB /* AUTAPIServiceFixtures.m in Sources */,
+				465D2403200E85FF00FE23BB /* AUTAPIServiceFixtures+Parse.m in Sources */,
+				465D2429200E896200FE23BB /* AUTDictionaryTransformer.m in Sources */,
+				465D23EB200E840400FE23BB /* AUTAPIFixtureResponse.m in Sources */,
+				465D2438200E8DA700FE23BB /* MTLModel+AUTValidateNonnull.m in Sources */,
+				465D23E4200E840400FE23BB /* AUTAPIFixtureEndpointInfo.m in Sources */,
+				465D240B200E873600FE23BB /* AUTAPIServiceFixtures+RequestParameters.m in Sources */,
+				465D242B200E896200FE23BB /* AUTJSONStringTransformer.m in Sources */,
+				465D23EC200E840400FE23BB /* AUTAPIFixtureRequest.m in Sources */,
+				465D23EA200E840400FE23BB /* AUTAPIFixtureRequestParameters.m in Sources */,
+				465D242E200E899F00FE23BB /* AUTValidatingValueTransformer.m in Sources */,
+				465D2408200E85FF00FE23BB /* AUTAPIServiceFixtures+Stub.m in Sources */,
+				465D23E3200E840400FE23BB /* AUTAPIFixture.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A17B116C3DAE981F1C8509 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				465D2444200E9CD700FE23BB /* AUTURLValueTransformer.m in Sources */,
+				465D2452200E9F4E00FE23BB /* AUTAPIServiceFixtures+ParseSpec.m in Sources */,
+				465D2441200E946100FE23BB /* AUTJSONStringTransformerSpec.m in Sources */,
+				465D2456200E9FDE00FE23BB /* AUTAPIServiceFixtures+Stub.m in Sources */,
+				465D2446200E9CE200FE23BB /* AUTDictionaryTransformer.m in Sources */,
+				465D2455200E9FDC00FE23BB /* AUTAPIServiceFixtures+RequestParameters.m in Sources */,
+				465D245B200E9FEA00FE23BB /* AUTAPIFixture.m in Sources */,
+				465D245A200E9FE800FE23BB /* AUTAPIFixtureEndpointInfo.m in Sources */,
+				465D2443200E9CD500FE23BB /* AUTValidatingValueTransformer.m in Sources */,
+				465D2454200E9FDB00FE23BB /* AUTAPIServiceFixtures+Parse.m in Sources */,
+				465D2457200E9FE200FE23BB /* AUTAPIFixtureResponse.m in Sources */,
+				465D245C200EA0CA00FE23BB /* MTLModel+AUTValidateNonnull.m in Sources */,
+				465D2459200E9FE600FE23BB /* AUTAPIFixtureRequest.m in Sources */,
+				465D2445200E9CDB00FE23BB /* AUTJSONStringTransformer.m in Sources */,
+				465D2458200E9FE400FE23BB /* AUTAPIFixtureRequestParameters.m in Sources */,
+				465D2453200E9FD800FE23BB /* AUTAPIServiceFixtures.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C6A15D76CB5D1A90EF1B6B2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ManualReader;
+			target = 470AA43EEF85F9896A3C2210 /* ManualReader */;
+			targetProxy = AAE5E4E5DD20957730EC5EA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06D52818D3414B0FA04F6E50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624FB791FB6936438C5E5918 /* ManualReader.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		465D245F200EAB2E00FE23BB /* Release Static */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E5137E45BB01B1F23C11B6 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = "Release Static";
+		};
+		465D2460200EAB2E00FE23BB /* Release Static */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465D245E200EAA8900FE23BB /* ManualReaderStatic.xcconfig */;
+			buildSettings = {
+			};
+			name = "Release Static";
+		};
+		465D2461200EAB2E00FE23BB /* Release Static */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465D245D200EAA7500FE23BB /* ManualReaderTestsStatic.xcconfig */;
+			buildSettings = {
+			};
+			name = "Release Static";
+		};
+		465D2462200EAB3C00FE23BB /* Debug Static */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F835B6773A46ACBB2B55047B /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = "Debug Static";
+		};
+		465D2463200EAB3C00FE23BB /* Debug Static */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465D245E200EAA8900FE23BB /* ManualReaderStatic.xcconfig */;
+			buildSettings = {
+			};
+			name = "Debug Static";
+		};
+		465D2464200EAB3C00FE23BB /* Debug Static */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 465D245D200EAA7500FE23BB /* ManualReaderTestsStatic.xcconfig */;
+			buildSettings = {
+			};
+			name = "Debug Static";
+		};
+		63E60BD209945474D53A573E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67F5AB9476F5CDACD7A4357E /* ManualReaderTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		824F660EDBF93B661CC56393 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 624FB791FB6936438C5E5918 /* ManualReader.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		8B9A5AA64A1C41CF4607D6AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F835B6773A46ACBB2B55047B /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		9D8E5659B517CC3AA240B1AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67F5AB9476F5CDACD7A4357E /* ManualReaderTests.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		A17E8E86C5AD4105C4E92041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54E5137E45BB01B1F23C11B6 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4EDB67E0CFE6E6985BDD7D0 /* Build configuration list for PBXNativeTarget "ManualReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				824F660EDBF93B661CC56393 /* Release */,
+				465D2460200EAB2E00FE23BB /* Release Static */,
+				06D52818D3414B0FA04F6E50 /* Debug */,
+				465D2463200EAB3C00FE23BB /* Debug Static */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF471B14BE93C499D7519353 /* Build configuration list for PBXNativeTarget "ManualReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E60BD209945474D53A573E /* Release */,
+				465D2461200EAB2E00FE23BB /* Release Static */,
+				9D8E5659B517CC3AA240B1AE /* Debug */,
+				465D2464200EAB3C00FE23BB /* Debug Static */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEB760C71FA9BC11C1806173 /* Build configuration list for PBXProject "ManualReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B9A5AA64A1C41CF4607D6AC /* Debug */,
+				465D2462200EAB3C00FE23BB /* Debug Static */,
+				A17E8E86C5AD4105C4E92041 /* Release */,
+				465D245F200EAB2E00FE23BB /* Release Static */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6060495F265BF17A4B4F9EF8 /* Project object */;
+}

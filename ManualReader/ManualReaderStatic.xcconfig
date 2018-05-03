@@ -1,0 +1,13 @@
+//
+//  ManualReaderStatic.xcconfig
+//  ManualReader
+//
+//  Created by Westin Newell on 1/16/18.
+//  Copyright © 2018 Automatic Labs. All rights reserved.
+//
+
+#include "ManualReader.xcconfig"
+
+// This setting determines the format of the produced binary and how it can be
+// linked when building other binaries.
+MACH_O_TYPE = staticlib

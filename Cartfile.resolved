@@ -1,0 +1,8 @@
+github "Automatic/AUTExtObjC" "0.1"
+github "Automatic/AUTTestKit" "1.4.4"
+github "Automatic/Manual" "0.1.2"
+github "Mantle/Mantle" "2.1.0"
+github "jspahrsummers/xcconfigs" "0.12"
+github "luisobo/Nocilla" "0.10.0"
+github "specta/expecta" "v1.0.6"
+github "specta/specta" "v1.0.7"

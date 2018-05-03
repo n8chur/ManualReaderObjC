@@ -1,0 +1,59 @@
+//
+//  ManualReader.xcconfig
+//  ManualReader
+//
+//  Created by Westin Newell on 01/16/18.
+//  Copyright © 2018 Automatic Labs. All rights reserved.
+//
+
+#include "../Carthage/Checkouts/xcconfigs/iOS/iOS-Framework.xcconfig"
+
+// Code will load on this and later versions of iOS.  Framework APIs that are
+// unavailable in earlier versions will be weak-linked; your code should check
+// for null function pointers or specific system versions before calling newer
+// APIs.
+IPHONEOS_DEPLOYMENT_TARGET = 10.0
+
+// This is the project-relative path to the plist file that contains the
+// Info.plist information used by bundles.
+INFOPLIST_FILE = $(TARGET_NAME)/Info.plist
+
+// A string that uniquely identifies the bundle
+PRODUCT_BUNDLE_IDENTIFIER = com.automatic.$(PRODUCT_NAME:rfc1034identifier)
+
+// The build system uses the selected device to set the correct value for the
+// UIDeviceFamily key it adds to the target's Info.plist file.
+TARGETED_DEVICE_FAMILY = 1,2
+
+// This is a list of paths to folders containing frameworks to be searched by
+// the compiler for both included or imported header files when compiling C,
+// Objective-C, C++, or Objective-C++, and by the linker for frameworks used by
+// the product. Paths are delimited by whitespace, so any paths with spaces in
+// them need to be properly quoted.
+FRAMEWORK_SEARCH_PATHS = $(inherited) Carthage/Build/iOS
+
+// This setting defines the the current version of the project. The value must
+// be a integer or floating point number like 57 or 365.8.
+CURRENT_PROJECT_VERSION = 1
+
+// Selects the process used for version-stamping generated files.
+VERSIONING_SYSTEM = apple-generic
+
+// Determines the compatibility version of the resulting library, bundle, or
+// framework binary.
+DYLIB_COMPATIBILITY_VERSION = 1
+
+// Activating this setting indicates that the target or project should generate
+// bitcode during compilation for platforms and architectures which support it.
+// For Archive builds, bitcode will be generated in the linked binary for
+// submission to the app store.  For other builds, the compiler and linker will
+// check whether the code complies with the requirements for bitcode generation,
+// but will not generate actual bitcode.
+//
+// Disabled because Specta (and possibly other unit test libraries) does not
+// have bitcode support.
+ENABLE_BITCODE = NO
+
+// Expecta needs to be updated to resolve this.
+// Blocked by https://github.com/specta/expecta/issues/192
+CLANG_WARN_STRICT_PROTOTYPES = NO
