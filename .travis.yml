@@ -4,7 +4,6 @@ before_install:
   - brew update
   - brew install xctool
 install: 
-  - carthage bootstrap --platform ios
+  - make bootstrap
 script: 
-  - xcodebuild -project ManualReader.xcodeproj -scheme ManualReader -sdk iphonesimulator11.3 build-for-testing
-  - xctool -project ManualReader.xcodeproj -scheme ManualReader run-tests -test-sdk iphonesimulator11.3
+  - make test

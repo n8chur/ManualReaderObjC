@@ -41,6 +41,11 @@ NSDictionary<NSString *, id> *responseJSONBody = fixture.response.jsonBody;
 
 ManualReaderObjC supports [Carthage](https://github.com/Carthage/Carthage).
 
+Setup the project by running:
+```bash
+$ make bootstrap
+```
+
 ## Built With
 
 * [Nocilla](https://github.com/luisobo/Nocilla) - HTTP stubbing for iOS and Mac OS X
